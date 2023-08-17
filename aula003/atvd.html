@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <label for="idate">Data: </label>
+                <input type="date" name="date" id="idate" class="form-control">
+            </div>
+            <div>
+                <label for="iname">Nome: </label>
+                <input type="text" name="name" id="iname" required class="form-control">
+            </div>
+            <div>
+                <label for="imail">E-Mail: </label>
+                <input type="email" name="mail" id="imail" required class="form-control">
+            </div>
+            <div>
+                <label for="">País:</label>
+                <select class="form-select">
+                    <option value="Brasil">Brasil</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Paraguai">Paraguai</option>
+                </select>
+            </div><br>
+            <div>
+                <p>Qual a capital da arábia saudita?</p>
+                <label for="curi">Curitiba</label>
+                <input type="radio" name="gen" id="curi"> <br>
+                <label for="riad">Riad</label>
+                <input type="radio" name="gen" id="riad"> <br>
+                <label for="bdh">Bdhor</label>
+                <input type="radio" name="gen" id="bdh"> <br>
+                <label for="latr">Latrym</label>
+                <input type="radio" name="gen" id="latr"> <br>
+                <label for="par">Paris</label>
+                <input type="radio" name="gen" id="par">
+            </div>
+            <div>
+                <p>Quantos paises existem no mundo</p>
+                <label for="190">190</label>
+                <input type="radio" name="np" id="190"> <br>
+                <label for="195">195</label>
+                <input type="radio" name="np" id="195"> <br>
+                <label for="213">213</label>
+                <input type="radio" name="np" id="213"> <br>
+                <label for="188">188</label>
+                <input type="radio" name="np" id="188"> <br>
+                <label for="198">198</label>
+                <input type="radio" name="np" id="198">
+            </div> <br>
+            <div>
+                <label for="acc">Aceito</label>
+                <input type="checkbox" name="acc" id="acc">
+            </div>
+            <input type="submit" value="Enviar" class="btn btn-outline-success">
+            <input type="reset" value="Resetar" class="btn btn-outline-danger">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
