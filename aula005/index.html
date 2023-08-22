@@ -21,8 +21,9 @@
             color: white;
             background: black url('img/wallpaper.jpg') center center no-repeat fixed;
             background-size: cover;
-            min-height: 30vh;
+            min-height: 35vh;
             opacity: 0.7;
+            margin: 50px 0;;
         }
 
         .wall h2 {
@@ -54,6 +55,32 @@
             font-size: 1.3em;
             color: rgb(239, 0, 0);
         }
+        nav img{
+            width: 30%;
+        }
+        .form{
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            background-color: whitesmoke;
+            color: black;
+        }
+        body{
+            background-color: rgb(90, 90, 90);
+            color: white;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to bottom, rgb(90, 90, 90), rgb(51, 51, 51) 60%);
+            color: white;
+            font-size: 1.3em;
+            min-height: 10vh;
+            margin-top: 50px;
+        }
     </style>
 </head>
 
@@ -61,7 +88,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -71,26 +98,6 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -123,7 +130,11 @@
                     <h2>Escopetas</h2>
                 </div>
                 <div class="card-body">
-
+                    <div class="produ">
+                        <img src="img/rifle.png" alt="ak 47">
+                        <p class="h4">Call 22</p>
+                        <p class="prec">R$ 15.790,49</p>
+                    </div>
                 </div>
                 <div class="card-footer">
 
@@ -134,7 +145,11 @@
                     <h2>Pistolas</h2>
                 </div>
                 <div class="card-body">
-
+                    <div class="produ">
+                        <img src="img/pistola.png" alt="ak 47">
+                        <p class="h4">Pistola</p>
+                        <p class="prec">R$ 6.679,99</p>
+                    </div>
                 </div>
                 <div class="card-footer">
 
@@ -168,7 +183,7 @@
         </section>
     </main>
     <footer class="text-center">
-        <p>sla</p>
+        <p>&copy; Nybert Guns</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
