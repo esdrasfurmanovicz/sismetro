@@ -15,6 +15,11 @@ Tablet: de 768px até 992px
 Desktop: de 992px até 1200px
 Grandes Telas: acima de 1200px
 */
+
+body{
+    background-image: linear-gradient(to bottom, rgb(30, 30, 30), rgb(56, 56, 56));
+    color: white;
+}
 main {
     padding: 20px;
 }
@@ -31,6 +36,13 @@ section{
 }
 p{
     line-height: 1.5em;
+}
+.text-01{
+    font-style: italic;
+    font-family: sans-serif;
+}
+.text-02{
+    font-family: serif;
 }
 h1{
     text-align: center;
