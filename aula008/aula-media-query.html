@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #c1{
+            background-color: aquamarine;
+        }
+        #c2{
+            background-color: pink;      
+        }
+        #c3{
+            background-color: burlywood;
+        }
+        .coluna{
+            float: left;
+            width: 100%;
+        }
+        @media screen and (min-width: 768px) {
+          .coluna{
+            width: 50%;
+          } 
+        }
+        @media screen and (min-width: 1200px){
+            .coluna{
+                width: 33.33%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coluna" id="c1">
+        <h1>Coluna A</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia optio ut maxime voluptate est beatae culpa pariatur soluta illum provident ad sint asperiores corrupti voluptatibus sit ipsum nesciunt laborum tenetur, enim minima recusandae aspernatur! Nulla sunt neque cupiditate, asperiores magnam quos laborum culpa maxime ratione. Maiores accusamus illo magni officiis impedit deserunt aliquam eos unde quo cum distinctio harum eaque laudantium consequuntur cumque hic exercitationem provident, iure sit delectus a asperiores earum debitis? Possimus suscipit laudantium non beatae, sunt illum asperiores blanditiis sint tenetur qui ad quas nam inventore quisquam eveniet alias atque odit itaque ipsam! Quidem, dolore? Odio!</p>
+    </div>
+    <div class="coluna" id="c2">
+        <h1>Coluna B</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia optio ut maxime voluptate est beatae culpa pariatur soluta illum provident ad sint asperiores corrupti voluptatibus sit ipsum nesciunt laborum tenetur, enim minima recusandae aspernatur! Nulla sunt neque cupiditate, asperiores magnam quos laborum culpa maxime ratione. Maiores accusamus illo magni officiis impedit deserunt aliquam eos unde quo cum distinctio harum eaque laudantium consequuntur cumque hic exercitationem provident, iure sit delectus a asperiores earum debitis? Possimus suscipit laudantium non beatae, sunt illum asperiores blanditiis sint tenetur qui ad quas nam inventore quisquam eveniet alias atque odit itaque ipsam! Quidem, dolore? Odio!</p>
+    </div>
+    <div class="coluna" id="c3">
+        <h1>Coluna C</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia optio ut maxime voluptate est beatae culpa pariatur soluta illum provident ad sint asperiores corrupti voluptatibus sit ipsum nesciunt laborum tenetur, enim minima recusandae aspernatur! Nulla sunt neque cupiditate, asperiores magnam quos laborum culpa maxime ratione. Maiores accusamus illo magni officiis impedit deserunt aliquam eos unde quo cum distinctio harum eaque laudantium consequuntur cumque hic exercitationem provident, iure sit delectus a asperiores earum debitis? Possimus suscipit laudantium non beatae, sunt illum asperiores blanditiis sint tenetur qui ad quas nam inventore quisquam eveniet alias atque odit itaque ipsam! Quidem, dolore? Odio!</p>
+    </div>
+</body>
+</html>
