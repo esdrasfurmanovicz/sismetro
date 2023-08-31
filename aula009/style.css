@@ -16,7 +16,6 @@ header{
 header img{
     display: block;
     margin: auto;
-    padding: 20px;
 }
 nav{
     width: 100%;
@@ -29,6 +28,7 @@ ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     padding: 10px;
 }
@@ -36,18 +36,26 @@ a{
     font-size: 1.4em;
     color: white;
     text-decoration: none;
+    padding: 10px;
 }
 
 .evo{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 5vh;
     padding: 20px;
 }
 .evo div{
     width: 25%;
+    max-height: 50vh;
     padding: 10px;
+}
+.evo img{
+    width: 75%;
+    display: block;
+    margin: auto;
 }
 h3{
     font-weight: bold;
@@ -62,4 +70,16 @@ h4{
     text-align: center;
     margin: 20px 0;
     font-size: 1.7em;
+}
+@media (max-width: 768px){
+    .evo div{
+        width: 33.3%;
+        margin: 30px auto;
+    }
+}
+@media (max-width: 600px){
+    .evo div{
+        width: 50%;
+        margin: 30px auto;
+    }
 }
