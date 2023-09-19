@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 013</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(0, 71, 71);
+        }
+        .calc{
+            background-color: rgb(79, 79, 79);
+            padding: 20px 5px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <section class='row'>
+        <div class='calc col-4 offset-4'>
+            <div class="row">
+                <div class="col-4">
+                    <input type="text" class="form-control" id="n1">
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="n2">
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" id="resultado" disabled>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-8">
+
+                </div>
+                <div class="col-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-dark" type="button" onclick="somar()">+</button>
+                        <button class="btn btn-dark" type="button">-</button>
+                        <button class="btn btn-dark" type="button">*</button>
+                        <button class="btn btn-dark" type="button">/</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
