@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aula 013</title>
+        <title>Aula 014</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <style>
@@ -48,7 +48,7 @@
                     <div class="row mb-2">
                         <div class="col-8">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-dark" type="button">&lt;x</button>
+                                <button class="btn btn-dark" type="button" onclick="apagar()">&lt;x</button>
                             </div>
                         </div>
                         <div class="col-4">
@@ -60,30 +60,30 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-dark" type="button">7</button>
-                                <button class="btn btn-dark" type="button">4</button>
-                                <button class="btn btn-dark" type="button">1</button>
+                                <button class="btn btn-dark" type="button" onclick="insere7()">7</button>
+                                <button class="btn btn-dark" type="button" onclick="insere4()">4</button>
+                                <button class="btn btn-dark" type="button" onclick="insere1()">1</button>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-dark" type="button">8</button>
-                                <button class="btn btn-dark" type="button">5</button>
-                                <button class="btn btn-dark" type="button">2</button>
+                                <button class="btn btn-dark" type="button" onclick="insere8()">8</button>
+                                <button class="btn btn-dark" type="button" onclick="insere5()">5</button>
+                                <button class="btn btn-dark" type="button" onclick="insere2()">2</button>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-dark" type="button">9</button>
-                                <button class="btn btn-dark" type="button">6</button>
-                                <button class="btn btn-dark" type="button">3</button>
+                                <button class="btn btn-dark" type="button" onclick="insere9()">9</button>
+                                <button class="btn btn-dark" type="button" onclick="insere6()">6</button>
+                                <button class="btn btn-dark" type="button" onclick="insere3()">3</button>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-8">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-dark" type="button">0</button>
+                                <button class="btn btn-dark" type="button" onclick="insere0()">0</button>
                             </div>
                         </div>
                         <div class="col-4">
@@ -99,8 +99,8 @@
                         <button class="btn btn-dark" type="button" onclick="dividido()">/</button>
                         <button class="btn btn-dark" type="button" onclick="vezes()">*</button>
                         <button class="btn btn-dark" type="button" onclick="menos()">-</button>
-                        <button class="btn btn-dark" type="button" onclick="somar()">+</button>
-                        <button class="btn btn-dark" type="button">=</button>
+                        <button class="btn btn-dark" type="button" onclick="efetuar_soma()">+</button>
+                        <button class="btn btn-dark" type="button" onclick="resultado()">=</button>
                     </div>
                 </div>
             </div>
