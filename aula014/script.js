@@ -1,6 +1,7 @@
 var valor
 var operacao
 var num
+var memoria = 0
 function efetuar_soma(){
     if(typeof valor != typeof undefined && typeof operacao != typeof undefined){
         valor = operacao(valor, Number(document.getElementById('valor').value))
@@ -10,6 +11,7 @@ function efetuar_soma(){
     }
     operacao = soma
 }
+
 function efetuar_subtra(){
     if(typeof valor != typeof undefined && typeof operacao != typeof undefined){
         valor = operacao(valor, Number(document.getElementById('valor').value))
@@ -44,6 +46,21 @@ function efetuar_porcent(){
    
 */
 }
+function addNumero(){
+    valor = addnum(Number(document.getElementById('valor').value))
+}
+function menosNumero(){
+    valor = menosnum(Number(document.getElementById('valor').value))
+}
+function apagarMemoria(){
+    memoria = 0
+    return console.log(memoria)
+}
+function mostrarMemoria(){
+    document.getElementById('valor').value = memoria
+}
+
+
 
 function resultado(){
     document.getElementById('valor').value = operacao(valor, Number(document.getElementById('valor').value))
@@ -87,3 +104,12 @@ function porcent(n1, n2){        // n1 = 20 e n2 = 70
         return (n2 / 100) * n1
     }
 }
+function addnum(n1){
+    memoria += n1
+    return console.log(memoria)
+}
+function menosnum(n1){
+    memoria -= n1
+    return console.log(memoria)
+}
+
