@@ -11,38 +11,22 @@
 </head>
 
 <body>
-  <nav>
-    <a href="/" aria-current="page">Home</a>
-    <a href="/page2.html">Other page</a>
-  </nav>
+  <header>
+    <h1>Consultar por ID de SS</h1>
+  </header>
   <main>
-    <h1>Home page</h1>
-    <input type="text" id="idSs">
-    <button id="btnConsultar">Consultar</button>
+    <div class="inp">
+      <label><strong>Digite o ID da SS</strong></label>
+      <input type="number" id="idSs" placeholder="0000000">
+    </div>
+    <div class="content">
+      <button id="btnConsultar">Consultar</button>
+      <button id="btnLimpar">Limpar</button>
+    </div>
     <div id="parg"></div>
   </main>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script>
-    $('#btnConsultar').on('click', function () {
-      var a = $.ajax({
-        method: 'get',
-        url: 'https://get.api.sismetro.com/SS/findBySs?ss=' + $("#idSs").val(),
-        headers: {
-          unit: 269,
-          key: '8a32de8f679c270cce25144694a08819',
-        },
-      });
-      a.done(function (data) {
-        let parg = document.getElementById('parg')
-        let sS = data.resultList[0]
-        let pares = Object.entries(sS);
-
-        pares.forEach(([chave, valor]) => {
-          parg.innerHTML += `<div class="child"><p><strong>${chave}</strong>:  ${valor}</p></div>`
-        });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
