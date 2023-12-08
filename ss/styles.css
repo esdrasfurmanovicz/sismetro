@@ -125,14 +125,14 @@ button:nth-child(2):hover {
   border-bottom: 1px solid black;
 
 }
-#type{
+.type{
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 50px auto 0px;
 }
-#type p{
+.type p{
   background-color: #f1f1f1;
   border: 2px solid gray;
   border-radius: 10px;
@@ -140,7 +140,7 @@ button:nth-child(2):hover {
   text-transform: lowercase;
   font-size: 0.7em;
 }
-#type strong{
+.type strong{
   border-bottom: 1px solid black;
 }
 #gut{

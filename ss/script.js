@@ -68,10 +68,13 @@ $('#btnConsultar').on('click', function () {
       } else {
         let pares = Object.entries(sS);
         const idSs = document.querySelector('#idSs')
-        document.querySelector("#abertaPor").innerHTML += `${sS.abertoPor}`
+        document.querySelector("#abertoPor").innerHTML += `${sS.abertoPor}`
         document.querySelector('#desc').innerHTML += `${sS.descricaoSs}`
         idSs.querySelector('p').innerHTML += `${sS.idSs}`
         document.querySelector('#dataAbertura').innerHTML += `${sS.dataAbertura}`
+        document.querySelector('#dataAlteracao').innerHTML += `${sS.dataAlteracao}`
+        document.querySelector('#dataEncerramento').innerHTML += `${sS.dataEncerramento}`
+        document.querySelector('#status').innerHTML += `${sS.status}`
         document.querySelector('#tipoSs').innerHTML += `${sS.tipoSs}`
         document.querySelector('#categoria').innerHTML += `${sS.categoria}`
         document.querySelector('#atendimento').innerHTML += `${sS.atendimento}`
@@ -79,6 +82,8 @@ $('#btnConsultar').on('click', function () {
         document.querySelector('#urgencia').innerHTML += `${urgencia}`
         document.querySelector('#tendencia').innerHTML += `${tendencia}`
         document.querySelector('#evolucao').innerHTML += `${sS.evolucao}`
+        document.querySelector('#filial').innerHTML += `${sS.filial}`
+        document.querySelector('#solicitante').innerHTML += `${sS.solicitante}`
       }
     });
   }
@@ -86,16 +91,22 @@ $('#btnConsultar').on('click', function () {
 
 const apagar = document.querySelector('#btnLimpar')
 apagar.addEventListener('click', function () {
+  idSs.value = ''
   document.querySelector("#if").innerHTML = ''
- document.querySelector("#abertaPor").innerHTML = `<strong>Aberta por:</strong><br>`
- document.querySelector("#idSs").innerHTML = `<p><strong>Id da SS:</strong></p>`
- document.querySelector('#desc').innerHTML = ``
- document.querySelector('#dataAbertura').innerHTML = `<strong>Data da Abertura:</strong><br>`
- document.querySelector('#tipoSs').innerHTML = `<strong>Tipo:</strong><br>`
- document.querySelector('#categoria').innerHTML = `<strong>Categoria:</strong><br>`
- document.querySelector('#atendimento').innerHTML = `<strong>Atendimento:</strong><br>`
- document.querySelector('#gravidade').innerHTML = `<strong>Gravidade:</strong><br>`
- document.querySelector('#urgencia').innerHTML = `<strong>Urgencia:</strong><br>`
- document.querySelector('#tendencia').innerHTML = `<strong>Tendencia:</strong><br>`
+  document.querySelector('#status').innerHTML = `<strong>Status:</strong><br>`
+  document.querySelector("#abertaPor").innerHTML = `<strong>Aberta por:</strong><br>`
+  document.querySelector("#idSs").innerHTML = `<p><strong>Id da SS:</strong></p>`
+  document.querySelector('#desc').innerHTML = ``
+  document.querySelector('#dataAbertura').innerHTML = `<strong>Data da Abertura:</strong><br>`
+  document.querySelector('#dataAlteracao').innerHTML = `<strong>Data da Alteração:</strong><br>`
+  document.querySelector('#dataEncerramento').innerHTML = `<strong>Data do encerramento:</strong><br>`
+  document.querySelector('#tipoSs').innerHTML = `<strong>Tipo:</strong><br>`
+  document.querySelector('#categoria').innerHTML = `<strong>Categoria:</strong><br>`
+  document.querySelector('#atendimento').innerHTML = `<strong>Atendimento:</strong><br>`
+  document.querySelector('#gravidade').innerHTML = `<strong>Gravidade:</strong><br>`
+  document.querySelector('#urgencia').innerHTML = `<strong>Urgencia:</strong><br>`
+  document.querySelector('#tendencia').innerHTML = `<strong>Tendencia:</strong><br>`
   document.querySelector('#evolucao').innerHTML = `<strong>Evolução </strong><br>`
+  document.querySelector('#filial').innerHTML = `<strong>Filial</strong><br>`
+  document.querySelector('#solicitante').innerHTML = `<strong>Solicitante</strong><br>`
 })
