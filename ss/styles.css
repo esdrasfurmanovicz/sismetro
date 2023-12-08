@@ -31,7 +31,9 @@ header h1 {
 main {
   margin: 50px 0px;
 }
-
+#if{
+  display: none;
+}
 .inp {
   margin: auto;
   width: 25%;
@@ -109,6 +111,9 @@ button:nth-child(2):hover {
   margin: auto;
   padding: 20px;
 }
+#desc{
+  text-align: center;
+}
 #abt{
   width: 70%;
   display: flex;
@@ -156,4 +161,8 @@ button:nth-child(2):hover {
   left: 45%;
   background-color: white;
   z-index: 1;
+}
+#gut p{
+  max-width: 33%;
+  min-width: 32%;
 }
