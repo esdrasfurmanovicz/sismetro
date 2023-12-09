@@ -17,55 +17,52 @@ $('#btnConsultar').on('click', function () {
       },
     });
     a.done(function (data) {
-      let sS = data.resultList[0]
-      console.log(data)
-      console.log(sS.valid)
-      let gravidade = ""
-      let urgencia = ""
-      let tendencia = ""
-      if (sS.gravidade == 1) {
-        gravidade = "Sem Gravidade"
-      } else if (sS.gravidade == 2) {
-        gravidade = "Pouco grave"
-      } else if (sS.gravidade == 3) {
-        gravidade = "Grave"
-      } else if (sS.gravidade == 4) {
-        gravidade = "Muito grave"
-      } else {
-        gravidade = "Extremamente grave"
-      }
-
-      if (sS.urgencia == 1) {
-        urgencia = "Pode esperar"
-      } else if (sS.urgencia == 2) {
-        urgencia = "Pouco urgente"
-      } else if (sS.urgencia == 3) {
-        urgencia = "O mais rápido possível"
-      } else if (sS.urgencia == 4) {
-        urgencia = "É urgente"
-      } else {
-        urgencia = "Necessita ação imediata"
-      }
-
-      if (sS.tendencia == 1) {
-        tendencia = "Não irá piorar"
-      } else if (sS.tendencia == 2) {
-        tendencia = "	Irá piorar a longo prazo"
-      } else if (sS.tendencia == 3) {
-        tendencia = "Irá piorar a médio prazo"
-      } else if (sS.tendencia == 4) {
-        tendencia = "Irá piorar em pouco tempo"
-      } else {
-        tendencia = "Irá piorar rapidamente"
-      }
-
-
-
-
-      console.log(gravidade)
       if (data.valid == false) {
         alert("Não encontrado")
       } else {
+        let sS = data.resultList[0]
+        console.log(data)
+        console.log(data.valid)
+        let gravidade = ""
+        let urgencia = ""
+        let tendencia = ""
+        if (sS.gravidade == 1) {
+          gravidade = "Sem Gravidade"
+        } else if (sS.gravidade == 2) {
+          gravidade = "Pouco grave"
+        } else if (sS.gravidade == 3) {
+          gravidade = "Grave"
+        } else if (sS.gravidade == 4) {
+          gravidade = "Muito grave"
+        } else {
+          gravidade = "Extremamente grave"
+        }
+
+        if (sS.urgencia == 1) {
+          urgencia = "Pode esperar"
+        } else if (sS.urgencia == 2) {
+          urgencia = "Pouco urgente"
+        } else if (sS.urgencia == 3) {
+          urgencia = "O mais rápido possível"
+        } else if (sS.urgencia == 4) {
+          urgencia = "É urgente"
+        } else {
+          urgencia = "Necessita ação imediata"
+        }
+
+        if (sS.tendencia == 1) {
+          tendencia = "Não irá piorar"
+        } else if (sS.tendencia == 2) {
+          tendencia = "	Irá piorar a longo prazo"
+        } else if (sS.tendencia == 3) {
+          tendencia = "Irá piorar a médio prazo"
+        } else if (sS.tendencia == 4) {
+          tendencia = "Irá piorar em pouco tempo"
+        } else {
+          tendencia = "Irá piorar rapidamente"
+        }
+
+
         let pares = Object.entries(sS);
         const idSs = document.querySelector('#idSs')
         document.querySelector("#abertoPor").innerHTML += `${sS.abertoPor}`
