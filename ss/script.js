@@ -84,6 +84,17 @@ $('#btnConsultar').on('click', function () {
         document.querySelector('#evolucao').innerHTML += `${sS.evolucao}`
         document.querySelector('#filial').innerHTML += `${sS.filial}`
         document.querySelector('#solicitante').innerHTML += `${sS.solicitante}`
+        document.querySelector('#localizacao').innerHTML += `${sS.localizacao}`
+        document.querySelector('#idPatrimonio').innerHTML += `${sS.idPatrimonio}`
+        document.querySelector('#tipoTec').innerHTML += `${sS.tipoTec}`
+        document.querySelector('#tag').innerHTML += `${sS.tag}`
+        document.querySelector('#marca').innerHTML += `${sS.marca}`
+        document.querySelector('#modelo').innerHTML += `${sS.modelo}`
+        document.querySelector('#numeroSerie').innerHTML += `${sS.numeroSerie}`
+        document.querySelector('#numeroPatrimonio').innerHTML += `${sS.numeroPatrimonio}`
+        document.querySelector('#servicosArealizar').innerHTML += `${sS.servicosArealizar}`
+        document.querySelector('#centroCusto').innerHTML += `${sS.centroCusto}`
+        document.querySelector('#conclusao').innerHTML += `${sS.conclusao}`
       }
     });
   }
@@ -94,7 +105,7 @@ apagar.addEventListener('click', function () {
   idSs.value = ''
   document.querySelector("#if").innerHTML = ''
   document.querySelector('#status').innerHTML = `<strong>Status:</strong><br>`
-  document.querySelector("#abertaPor").innerHTML = `<strong>Aberta por:</strong><br>`
+  document.querySelector("#abertoPor").innerHTML = `<strong>Aberta por:</strong><br>`
   document.querySelector("#idSs").innerHTML = `<p><strong>Id da SS:</strong></p>`
   document.querySelector('#desc').innerHTML = ``
   document.querySelector('#dataAbertura').innerHTML = `<strong>Data da Abertura:</strong><br>`
@@ -109,4 +120,14 @@ apagar.addEventListener('click', function () {
   document.querySelector('#evolucao').innerHTML = `<strong>Evolução </strong><br>`
   document.querySelector('#filial').innerHTML = `<strong>Filial</strong><br>`
   document.querySelector('#solicitante').innerHTML = `<strong>Solicitante</strong><br>`
+  document.querySelector('#localizacao').innerHTML = `<strong>Localização</strong><br>`
+  document.querySelector('#tipoTec').innerHTML = `<strong>Tipo Tec:</strong><br>`
+  document.querySelector('#tag').innerHTML = `<strong>TAG:</strong><br>`
+  document.querySelector('#marca').innerHTML = `<strong>Marca:</strong><br>`
+  document.querySelector('#modelo').innerHTML = `<strong>Modelo:</strong><br>`
+  document.querySelector('#numeroSerie').innerHTML = `<strong>Nº Série:</strong><br>`
+  document.querySelector('#numeroPatrimonio').innerHTML = `<strong>Nº Pat:</strong><br>`
+  document.querySelector('#servicosArealizar').innerHTML = `<strong>Serviços a realizar / Detalhes do Problema:</strong><br>`
+  document.querySelector('#centroCusto').innerHTML = `<strong>Centro de Custo</strong><br>`
+  document.querySelector('#conclusao').innerHTML = `<strong>Avaliação / Conclusão:</strong><br>`
 })

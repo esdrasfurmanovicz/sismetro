@@ -143,7 +143,7 @@ button:nth-child(2):hover {
 .type strong{
   border-bottom: 1px solid black;
 }
-#gut{
+#gut, #patri{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -154,6 +154,7 @@ button:nth-child(2):hover {
   padding: 20px;
   width: 70%;
   position: relative;
+  flex-wrap: wrap;
 }
 #gut h2{
   position: absolute;
@@ -165,4 +166,48 @@ button:nth-child(2):hover {
 #gut p{
   max-width: 33%;
   min-width: 32%;
+}
+#patri h2{
+  position: absolute;
+  top: -18px;
+  left: 40%;
+  background-color: white;
+  z-index: 1;
+}
+#patri div{
+  min-width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#patri div p{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+#patri p{
+  width: 50%;
+  margin-bottom: 40px;
+}
+#status{
+  margin-top: 25px;
+}
+#localizacao{
+  margin-top: 50px;
+}
+#servicosArealizar{
+  margin: 50px auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 79.9%;
+  max-width: 80%;
+  
+}
+#conclusao{
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 79.9%;
+  max-width: 80%;
+  margin: auto;
 }
